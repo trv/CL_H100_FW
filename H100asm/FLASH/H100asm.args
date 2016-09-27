@@ -1,0 +1,5 @@
+"$(ProjDirPath)/Project_Settings/Linker_Files/Project.prm"
+-M
+-ViewHidden
+-WmsgFob"%f%e:%l:%k:%d %m\n" 
+-Add("$(ProjDirPath)/FLASH/Sources/fw_asm.obj")

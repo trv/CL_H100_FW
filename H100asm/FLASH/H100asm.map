@@ -1,0 +1,369 @@
+*** EVALUATION ***
+PROGRAM "H100asm.abs"
+
+*********************************************************************************************
+TARGET SECTION
+---------------------------------------------------------------------------------------------
+Processor   : Freescale HC08
+Memory Model: SMALL
+File Format : ELF\DWARF 2.0
+Linker      : SmartLinker V-5.0.50 Build 13087, Mar 29 2013
+
+*********************************************************************************************
+FILE SECTION
+---------------------------------------------------------------------------------------------
+fw_asm.obj                              Model: SMALL,         Lang: Assembler
+
+*********************************************************************************************
+STARTUP SECTION
+---------------------------------------------------------------------------------------------
+Entry point: 0xF846 (_Startup)
+
+*********************************************************************************************
+SECTION-ALLOCATION SECTION
+Section Name                    Size  Type     From       To       Segment
+---------------------------------------------------------------------------------------------
+fw_asm__ORG00001                 128     R     0xC000     0xC07F   .absSeg0
+fw_asm__ORG00002                1011     R     0xC400     0xC7F2   .absSeg1
+fw_asm__ORG00003                1024     R     0xC800     0xCBFF   .absSeg2
+fw_asm__ORG00004                 167     R     0xCC00     0xCCA6   .absSeg3
+fw_asm__ORG00005                  55     R     0xCCA7     0xCCDD   .absSeg4
+fw_asm__ORG00006                 131     R     0xCCE2     0xCD64   .absSeg5
+fw_asm__ORG00007                1664     R     0xCD65     0xD3E4   .absSeg6
+fw_asm__ORG00008                 966     R     0xD3E6     0xD7AB   .absSeg7
+fw_asm__ORG00009                1543     R     0xD7AC     0xDDB2   .absSeg8
+fw_asm__ORG00010                 331     R     0xDDB5     0xDEFF   .absSeg9
+fw_asm__ORG00011                6247     R     0xDF00     0xF766   .absSeg10
+fw_asm__ORG00012                  64     R     0xF7C0     0xF7FF   .absSeg11
+fw_asm__ORG00013                   4     R     0xF800     0xF803   .absSeg12
+fw_asm__ORG00014                  66     R     0xF804     0xF845   .absSeg13
+fw_asm__ORG00015                  66     R     0xF846     0xF887   .absSeg14
+fw_asm__ORG00016                 127     R     0xF888     0xF906   .absSeg15
+fw_asm__ORG00017                 316     R     0xF907     0xFA42   .absSeg16
+fw_asm__ORG00018                  27     R     0xFA43     0xFA5D   .absSeg17
+fw_asm__ORG00019                 266     R     0xFA5E     0xFB67   .absSeg18
+fw_asm__ORG00020                 129     R     0xFB68     0xFBE8   .absSeg19
+fw_asm__ORG00021                  12     R     0xFBE9     0xFBF4   .absSeg20
+fw_asm__ORG00022                  11     R     0xFBF5     0xFBFF   .absSeg21
+fw_asm__ORG00023                  17     R     0xFC00     0xFC10   .absSeg22
+fw_asm__ORG00024                  10     R     0xFC11     0xFC1A   .absSeg23
+fw_asm__ORG00025                  33     R     0xFC1B     0xFC3B   .absSeg24
+fw_asm__ORG00026                 121     R     0xFC3C     0xFCB4   .absSeg25
+fw_asm__ORG00027                   7     R     0xFCB5     0xFCBB   .absSeg26
+fw_asm__ORG00028                  16     R     0xFCBC     0xFCCB   .absSeg27
+fw_asm__ORG00029                   8     R     0xFCCC     0xFCD3   .absSeg28
+fw_asm__ORG00030                  62     R     0xFF70     0xFFAD   .absSeg29
+fw_asm__ORG00031                   1     R     0xFFBD     0xFFBD   .absSeg30
+fw_asm__ORG00032                   1     R     0xFFBF     0xFFBF   .absSeg31
+fw_asm__ORG00033                  62     R     0xFFC0     0xFFFD   .absSeg32
+.stack                           128   R/W      0x100      0x17F   RAM
+.vectSeg33_vect                    2     R     0xFFFE     0xFFFF   .vectSeg33
+
+Summary of section sizes per section type:
+READ_ONLY (R):        3967 (dec:    14695)
+READ_WRITE (R/W):       80 (dec:      128)
+
+*********************************************************************************************
+VECTOR-ALLOCATION SECTION
+    Address     InitValue   InitFunction
+---------------------------------------------------------------------------------------------
+     0xFFFE        0xF846   _Startup
+
+*********************************************************************************************
+OBJECT-ALLOCATION SECTION
+     Name               Module                 Addr   hSize   dSize     Ref    Section   RLIB
+---------------------------------------------------------------------------------------------
+MODULE:                 -- fw_asm.obj --
+- PROCEDURES:
+     VAR00017                                  C639      76     118       0   .text       
+     VAR00018                                  C6AF     144     324       0   .text       
+     VAR00020                                  D82E      38      56       0   .text       
+     VAR00021                                  D866     54D    1357       0   .text       
+     VAR00022                                  E5A4     3D0     976       0   .text       
+     VAR00023                                  E974     DF3    3571       0   .text       
+     BootISRInit                               F804      42      66       1   .text       
+     _Startup                                  F846      42      66       0   .init       
+     VAR00032                                  F950      F3     243       0   .text       
+- VARIABLES:
+     VAR00001                                  C000       8       8       0   .text       
+     VAR00002                                  C008       8       8       0   .text       
+     VAR00003                                  C010       8       8       0   .text       
+     VAR00004                                  C018       8       8       0   .text       
+     VAR00005                                  C020       8       8       0   .text       
+     VAR00006                                  C028       8       8       0   .text       
+     VAR00007                                  C030       8       8       0   .text       
+     VAR00008                                  C038       8       8       0   .text       
+     VAR00009                                  C040       8       8       0   .text       
+     VAR00010                                  C048       8       8       0   .text       
+     VAR00011                                  C050       8       8       0   .text       
+     VAR00012                                  C058       8       8       0   .text       
+     VAR00013                                  C060       8       8       0   .text       
+     VAR00014                                  C068       8       8       0   .text       
+     VAR00015                                  C070       8       8       0   .text       
+     VAR00016                                  C078       8       8       0   .text       
+     VAR00019                                  C800     400    1024       0   .text       
+     VAR00024                                  F7C0       8       8       0   .text       
+     VAR00025                                  F7C8       8       8       0   .text       
+     VAR00026                                  F7D0       8       8       0   .text       
+     VAR00027                                  F7D8       8       8       0   .text       
+     VAR00028                                  F7E0       8       8       0   .text       
+     VAR00029                                  F7E8       8       8       0   .text       
+     VAR00030                                  F7F0       8       8       0   .text       
+     VAR00031                                  F7F8       8       8       0   .text       
+     VAR00033                                  FCBC       1       1       0   .text       
+     VAR00034                                  FCBD       1       1       0   .text       
+     VAR00035                                  FCBE       1       1       0   .text       
+     VAR00036                                  FCBF       1       1       0   .text       
+     VAR00037                                  FCC0       1       1       0   .text       
+     VAR00038                                  FCC1       1       1       0   .text       
+     VAR00039                                  FCC2       1       1       0   .text       
+     VAR00040                                  FCC3       1       1       0   .text       
+     VAR00041                                  FCC4       1       1       0   .text       
+     VAR00042                                  FCC5       1       1       0   .text       
+     VAR00043                                  FCC6       1       1       0   .text       
+     VAR00044                                  FCC7       1       1       0   .text       
+     VAR00045                                  FCC8       1       1       0   .text       
+     VAR00046                                  FCC9       1       1       0   .text       
+     VAR00047                                  FCCA       1       1       0   .text       
+     VAR00048                                  FCCB       1       1       0   .text       
+     VAR00049                                  FCCC       7       7       0   .text       
+     VAR00050                                  FCD3       1       1       0   .text       
+     VAR00051                                  FF70       2       2       0   .text       
+     VAR00052                                  FF72       2       2       0   .text       
+     VAR00053                                  FF74       2       2       0   .text       
+     VAR00054                                  FF76       2       2       0   .text       
+     VAR00055                                  FF78       2       2       0   .text       
+     VAR00056                                  FF7A       2       2       0   .text       
+     VAR00057                                  FF7C       2       2       0   .text       
+     VAR00058                                  FF7E       2       2       0   .text       
+     VAR00059                                  FF80       2       2       0   .text       
+     VAR00060                                  FF82       2       2       0   .text       
+     VAR00061                                  FF84       2       2       0   .text       
+     VAR00062                                  FF86       2       2       0   .text       
+     VAR00063                                  FF88       2       2       0   .text       
+     VAR00064                                  FF8A       2       2       0   .text       
+     VAR00065                                  FF8C       2       2       0   .text       
+     VAR00066                                  FF8E       2       2       0   .text       
+     VAR00067                                  FF90       2       2       0   .text       
+     VAR00068                                  FF92       2       2       0   .text       
+     VAR00069                                  FF94       2       2       0   .text       
+     VAR00070                                  FF96       2       2       0   .text       
+     VAR00071                                  FF98       2       2       0   .text       
+     VAR00072                                  FF9A       2       2       0   .text       
+     VAR00073                                  FF9C       2       2       0   .text       
+     VAR00074                                  FF9E       2       2       0   .text       
+     VAR00075                                  FFA0       2       2       0   .text       
+     VAR00076                                  FFA2       2       2       0   .text       
+     VAR00077                                  FFA4       2       2       0   .text       
+     VAR00078                                  FFA6       2       2       0   .text       
+     VAR00079                                  FFA8       2       2       0   .text       
+     VAR00080                                  FFAA       2       2       0   .text       
+     VAR00081                                  FFAC       2       2       0   .text       
+     VAR00082                                  FFBD       1       1       0   .text       
+     VAR00083                                  FFBF       1       1       0   .text       
+     VAR00084                                  FFC0       2       2       0   .text       
+     VAR00085                                  FFC2       2       2       0   .text       
+     VAR00086                                  FFC4       2       2       0   .text       
+     VAR00087                                  FFC6       2       2       0   .text       
+     VAR00088                                  FFC8       2       2       0   .text       
+     VAR00089                                  FFCA       2       2       0   .text       
+     VAR00090                                  FFCC       2       2       0   .text       
+     VAR00091                                  FFCE       2       2       0   .text       
+     VAR00092                                  FFD0       2       2       0   .text       
+     VAR00093                                  FFD2       2       2       0   .text       
+     VAR00094                                  FFD4       2       2       0   .text       
+     VAR00095                                  FFD6       2       2       0   .text       
+     VAR00096                                  FFD8       2       2       0   .text       
+     VAR00097                                  FFDA       2       2       0   .text       
+     VAR00098                                  FFDC       2       2       0   .text       
+     VAR00099                                  FFDE       2       2       0   .text       
+     VAR00100                                  FFE0       2       2       0   .text       
+     VAR00101                                  FFE2       2       2       0   .text       
+     VAR00102                                  FFE4       2       2       0   .text       
+     VAR00103                                  FFE6       2       2       0   .text       
+     VAR00104                                  FFE8       2       2       0   .text       
+     VAR00105                                  FFEA       2       2       0   .text       
+     VAR00106                                  FFEC       2       2       0   .text       
+     VAR00107                                  FFEE       2       2       0   .text       
+     VAR00108                                  FFF0       2       2       0   .text       
+     VAR00109                                  FFF2       2       2       0   .text       
+     VAR00110                                  FFF4       2       2       0   .text       
+     VAR00111                                  FFF6       2       2       0   .text       
+     VAR00112                                  FFF8       2       2       0   .text       
+     VAR00113                                  FFFA       2       2       0   .text       
+     VAR00114                                  FFFC       2       2       0   .text       
+
+*********************************************************************************************
+MODULE STATISTIC
+  Name                                      Data   Code  Const
+---------------------------------------------------------------------------------------------
+  fw_asm.obj                                   0  13327   1366
+  other                                      128      2      0
+
+*********************************************************************************************
+SECTION USE IN OBJECT-ALLOCATION SECTION
+---------------------------------------------------------------------------------------------
+SECTION: ".text"
+  VAR00001 VAR00002 VAR00003 VAR00004 VAR00005 VAR00006 VAR00007 VAR00008 
+  VAR00009 VAR00010 VAR00011 VAR00012 VAR00013 VAR00014 VAR00015 VAR00016 
+  VAR00017 VAR00018 VAR00019 VAR00020 VAR00021 VAR00022 VAR00023 VAR00024 
+  VAR00025 VAR00026 VAR00027 VAR00028 VAR00029 VAR00030 VAR00031 BootISRInit 
+  VAR00032 VAR00033 VAR00034 VAR00035 VAR00036 VAR00037 VAR00038 VAR00039 
+  VAR00040 VAR00041 VAR00042 VAR00043 VAR00044 VAR00045 VAR00046 VAR00047 
+  VAR00048 VAR00049 VAR00050 VAR00051 VAR00052 VAR00053 VAR00054 VAR00055 
+  VAR00056 VAR00057 VAR00058 VAR00059 VAR00060 VAR00061 VAR00062 VAR00063 
+  VAR00064 VAR00065 VAR00066 VAR00067 VAR00068 VAR00069 VAR00070 VAR00071 
+  VAR00072 VAR00073 VAR00074 VAR00075 VAR00076 VAR00077 VAR00078 VAR00079 
+  VAR00080 VAR00081 VAR00082 VAR00083 VAR00084 VAR00085 VAR00086 VAR00087 
+  VAR00088 VAR00089 VAR00090 VAR00091 VAR00092 VAR00093 VAR00094 VAR00095 
+  VAR00096 VAR00097 VAR00098 VAR00099 VAR00100 VAR00101 VAR00102 VAR00103 
+  VAR00104 VAR00105 VAR00106 VAR00107 VAR00108 VAR00109 VAR00110 VAR00111 
+  VAR00112 VAR00113 VAR00114 
+SECTION: ".init"
+  _Startup 
+
+*********************************************************************************************
+OBJECT LIST SORTED BY ADDRESS
+     Name                                      Addr   hSize   dSize     Ref    Section   RLIB
+---------------------------------------------------------------------------------------------
+     VAR00001                                  C000       8       8       0   .text       
+     VAR00002                                  C008       8       8       0   .text       
+     VAR00003                                  C010       8       8       0   .text       
+     VAR00004                                  C018       8       8       0   .text       
+     VAR00005                                  C020       8       8       0   .text       
+     VAR00006                                  C028       8       8       0   .text       
+     VAR00007                                  C030       8       8       0   .text       
+     VAR00008                                  C038       8       8       0   .text       
+     VAR00009                                  C040       8       8       0   .text       
+     VAR00010                                  C048       8       8       0   .text       
+     VAR00011                                  C050       8       8       0   .text       
+     VAR00012                                  C058       8       8       0   .text       
+     VAR00013                                  C060       8       8       0   .text       
+     VAR00014                                  C068       8       8       0   .text       
+     VAR00015                                  C070       8       8       0   .text       
+     VAR00016                                  C078       8       8       0   .text       
+     VAR00017                                  C639      76     118       0   .text       
+     VAR00018                                  C6AF     144     324       0   .text       
+     VAR00019                                  C800     400    1024       0   .text       
+     VAR00020                                  D82E      38      56       0   .text       
+     VAR00021                                  D866     54D    1357       0   .text       
+     VAR00022                                  E5A4     3D0     976       0   .text       
+     VAR00023                                  E974     DF3    3571       0   .text       
+     VAR00024                                  F7C0       8       8       0   .text       
+     VAR00025                                  F7C8       8       8       0   .text       
+     VAR00026                                  F7D0       8       8       0   .text       
+     VAR00027                                  F7D8       8       8       0   .text       
+     VAR00028                                  F7E0       8       8       0   .text       
+     VAR00029                                  F7E8       8       8       0   .text       
+     VAR00030                                  F7F0       8       8       0   .text       
+     VAR00031                                  F7F8       8       8       0   .text       
+     BootISRInit                               F804      42      66       1   .text       
+     _Startup                                  F846      42      66       0   .init       
+     VAR00032                                  F950      F3     243       0   .text       
+     VAR00033                                  FCBC       1       1       0   .text       
+     VAR00034                                  FCBD       1       1       0   .text       
+     VAR00035                                  FCBE       1       1       0   .text       
+     VAR00036                                  FCBF       1       1       0   .text       
+     VAR00037                                  FCC0       1       1       0   .text       
+     VAR00038                                  FCC1       1       1       0   .text       
+     VAR00039                                  FCC2       1       1       0   .text       
+     VAR00040                                  FCC3       1       1       0   .text       
+     VAR00041                                  FCC4       1       1       0   .text       
+     VAR00042                                  FCC5       1       1       0   .text       
+     VAR00043                                  FCC6       1       1       0   .text       
+     VAR00044                                  FCC7       1       1       0   .text       
+     VAR00045                                  FCC8       1       1       0   .text       
+     VAR00046                                  FCC9       1       1       0   .text       
+     VAR00047                                  FCCA       1       1       0   .text       
+     VAR00048                                  FCCB       1       1       0   .text       
+     VAR00049                                  FCCC       7       7       0   .text       
+     VAR00050                                  FCD3       1       1       0   .text       
+     VAR00051                                  FF70       2       2       0   .text       
+     VAR00052                                  FF72       2       2       0   .text       
+     VAR00053                                  FF74       2       2       0   .text       
+     VAR00054                                  FF76       2       2       0   .text       
+     VAR00055                                  FF78       2       2       0   .text       
+     VAR00056                                  FF7A       2       2       0   .text       
+     VAR00057                                  FF7C       2       2       0   .text       
+     VAR00058                                  FF7E       2       2       0   .text       
+     VAR00059                                  FF80       2       2       0   .text       
+     VAR00060                                  FF82       2       2       0   .text       
+     VAR00061                                  FF84       2       2       0   .text       
+     VAR00062                                  FF86       2       2       0   .text       
+     VAR00063                                  FF88       2       2       0   .text       
+     VAR00064                                  FF8A       2       2       0   .text       
+     VAR00065                                  FF8C       2       2       0   .text       
+     VAR00066                                  FF8E       2       2       0   .text       
+     VAR00067                                  FF90       2       2       0   .text       
+     VAR00068                                  FF92       2       2       0   .text       
+     VAR00069                                  FF94       2       2       0   .text       
+     VAR00070                                  FF96       2       2       0   .text       
+     VAR00071                                  FF98       2       2       0   .text       
+     VAR00072                                  FF9A       2       2       0   .text       
+     VAR00073                                  FF9C       2       2       0   .text       
+     VAR00074                                  FF9E       2       2       0   .text       
+     VAR00075                                  FFA0       2       2       0   .text       
+     VAR00076                                  FFA2       2       2       0   .text       
+     VAR00077                                  FFA4       2       2       0   .text       
+     VAR00078                                  FFA6       2       2       0   .text       
+     VAR00079                                  FFA8       2       2       0   .text       
+     VAR00080                                  FFAA       2       2       0   .text       
+     VAR00081                                  FFAC       2       2       0   .text       
+     VAR00082                                  FFBD       1       1       0   .text       
+     VAR00083                                  FFBF       1       1       0   .text       
+     VAR00084                                  FFC0       2       2       0   .text       
+     VAR00085                                  FFC2       2       2       0   .text       
+     VAR00086                                  FFC4       2       2       0   .text       
+     VAR00087                                  FFC6       2       2       0   .text       
+     VAR00088                                  FFC8       2       2       0   .text       
+     VAR00089                                  FFCA       2       2       0   .text       
+     VAR00090                                  FFCC       2       2       0   .text       
+     VAR00091                                  FFCE       2       2       0   .text       
+     VAR00092                                  FFD0       2       2       0   .text       
+     VAR00093                                  FFD2       2       2       0   .text       
+     VAR00094                                  FFD4       2       2       0   .text       
+     VAR00095                                  FFD6       2       2       0   .text       
+     VAR00096                                  FFD8       2       2       0   .text       
+     VAR00097                                  FFDA       2       2       0   .text       
+     VAR00098                                  FFDC       2       2       0   .text       
+     VAR00099                                  FFDE       2       2       0   .text       
+     VAR00100                                  FFE0       2       2       0   .text       
+     VAR00101                                  FFE2       2       2       0   .text       
+     VAR00102                                  FFE4       2       2       0   .text       
+     VAR00103                                  FFE6       2       2       0   .text       
+     VAR00104                                  FFE8       2       2       0   .text       
+     VAR00105                                  FFEA       2       2       0   .text       
+     VAR00106                                  FFEC       2       2       0   .text       
+     VAR00107                                  FFEE       2       2       0   .text       
+     VAR00108                                  FFF0       2       2       0   .text       
+     VAR00109                                  FFF2       2       2       0   .text       
+     VAR00110                                  FFF4       2       2       0   .text       
+     VAR00111                                  FFF6       2       2       0   .text       
+     VAR00112                                  FFF8       2       2       0   .text       
+     VAR00113                                  FFFA       2       2       0   .text       
+     VAR00114                                  FFFC       2       2       0   .text       
+
+*********************************************************************************************
+UNUSED-OBJECTS SECTION
+---------------------------------------------------------------------------------------------
+
+*********************************************************************************************
+COPYDOWN SECTION
+---------------------------------------------------------------------------------------------
+
+*********************************************************************************************
+OBJECT-DEPENDENCIES SECTION
+---------------------------------------------------------------------------------------------
+
+*********************************************************************************************
+DEPENDENCY TREE
+*********************************************************************************************
+*********************************************************************************************
+STATISTIC SECTION
+---------------------------------------------------------------------------------------------
+
+ExeFile:
+--------
+Number of blocks to be downloaded: 28
+Total size of all blocks to be downloaded: 14695
+

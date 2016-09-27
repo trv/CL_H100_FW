@@ -1,0 +1,20 @@
+Decoder V-5.0.30 Build 13087, Mar 29 2013
+Options: -ArgFileSources/main_c.args -Env"GENPATH=C:/Users/Timothy/workspaces/CL_H100_FW/H100/Project_Headers;C:\Freescale\CW MCU v10.4\eclipse\../MCU/lib/hc08c/device/src;C:\Freescale\CW MCU v10.4\eclipse\../MCU/lib/hc08c/lib;C:\Freescale\CW MCU v10.4\eclipse\../MCU/lib/hc08c/src;C:\Freescale\CW MCU v10.4\eclipse\../MCU/lib/hc08c/device/include;C:\Freescale\CW MCU v10.4\eclipse\../MCU/lib/hc08c/include;C:\Freescale\CW MCU v10.4\eclipse\../MCU/lib/hc08c/device/asm_include" -EnvOBJPATH=. -EnvTEXTPATH=. -OSources\main_c.lst -ViewHidden -WmsgFob"%f%e:%l:%k:%d %m\n"
+Decoding File: 'Sources\main_c.obj'
+File format: ELF/DWARF
+
+DISASSEMBLY OF: '.text' FROM 364 TO 378 SIZE 14 (0XE)
+Opening source file 'C:/Users/Timothy/workspaces/CL_H100_FW/H100\Sources\main.c'
+    8: void main(void) {
+main:
+00000000 9A       CLI    
+   12:   asm_main();		/* call the assembly function */
+00000001 CD0000   JSR    asm_main
+   15:     __RESET_WATCHDOG();	/* feeds the dog */
+00000004 A655     LDA    #0x55
+00000006 450000   LDHX   #SRS
+00000009 F7       STA    ,X
+0000000A 48       LSLA   
+0000000B F7       STA    ,X
+0000000C 20F6     BRA    *-8       ;abs = 0x0004
+

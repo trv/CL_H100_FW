@@ -1,0 +1,12 @@
+"$(ProjDirPath)/Project_Settings/Linker_Files/Project.prm"
+-M
+-ViewHidden
+-WmsgFob"%f%e:%l:%k:%d %m\n"
+-WmsgSd1100
+-WmsgSd1912
+-WmsgSd1107 
+-Add("$(ProjDirPath)/FLASH/Sources/asm_main_asm.obj"
+"$(ProjDirPath)/FLASH/Sources/main_c.obj"
+"$(ProjDirPath)/FLASH/Project_Settings/Startup_Code/start08_c.obj"
+"$(ProjDirPath)/FLASH/Lib/mc9s08mp16_c.obj"
+"$(MCUToolsBaseDirEnv)/lib/hc08c/lib/ansiis.lib")
